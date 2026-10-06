@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COLLAVYN - Where Brands Meet Creators</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-c">C</div>
+      <div>
+        <h1>COLLAVYN</h1>
+        <p>Where Brands Meet Creators.</p>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#creators">For Creators</a>
+      <a href="#brands">For Brands</a>
+      <a href="#campaigns">Campaigns</a>
+      <button class="btn-creator" onclick="openLogin('creator')">Creator Login</button>
+      <button class="btn-brand" onclick="openLogin('brand')">Brand Login</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Real People.<br>Authentic Content.<br><span class="gradient-text">Bigger Impact.</span></h1>
+      <p>Influencer marketing & paid collaborations made simple.</p>
+      <div class="hero-btns">
+        <button class="btn-primary">I'm a Creator</button>
+        <button class="btn-secondary">I'm a Brand</button>
+      </div>
+      <div class="handwritten">Create<br>Connect<br>Grow</div>
+    </div>
+    <div class="hero-right">
+      <div class="creator-img"></div>
+    </div>
+  </section>
+
+  <!-- CAMPAIGN MESSAGE -->
+  <section id="campaigns" class="campaign">
+    <h1>Creators + Brands = <span class="gradient-text">Growth</span></h1>
+    <div class="campaign-grid">
+      <div class="card">
+        <h3>FOR CREATORS</h3>
+        <ul>
+          <li>💰 Get paid collaborations</li>
+          <li>Work with growing brands</li>
+          <li>Grow your portfolio & audience</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>FOR BRANDS</h3>
+        <ul>
+          <li>Find the right creators</li>
+          <li>Run targeted campaigns</li>
+          <li>Promote products authentically</li>
+          <li>Reach the right audience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR CREATORS -->
+  <section id="creators" class="split-section">
+    <div class="text">
+      <span>FOR CREATORS</span>
+      <h2>Your<br><em>Content Matters.</em></h2>
+      <ul>
+        <li>Get Noticed</li>
+        <li>Collaborate with Top Brands</li>
+        <li>Grow Your Audience</li>
+        <li>Earn Better</li>
+      </ul>
+    </div>
+    <div class="image-box creator"></div>
+  </section>
+
+  <!-- FOR BRANDS -->
+  <section id="brands" class="split-section reverse">
+    <div class="text">
+      <span>FOR BRANDS</span>
+      <h2>Find the Right<br><span class="gradient-text">Creators.</span></h2>
+      <ul>
+        <li>🎯 Targeted Campaigns</li>
+        <li>👥 Verified Creators</li>
+        <li>📈 Real Engagement</li>
+        <li>🛡️ Safe & Transparent</li>
+      </ul>
+      <button class="btn-primary">Start Your Campaign →</button>
+    </div>
+    <div class="cards-stack">
+      <div class="mini-card">😎 25.6K</div>
+      <div class="mini-card">86K</div>
+      <div class="mini-card">210K</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo"><div class="logo-c">C</div><h1>COLLAVYN</h1></div>
+    <p>INFLUENCER MARKETING | BRAND COLLABORATIONS | CREATOR COMMUNITY</p>
+    <div class="handwritten">Create Connect Grow</div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeLogin()">&times;</span>
+      <h2 id="loginTitle">Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()" class="btn-primary" style="width:100%">Login as <span id="roleText"></span></button>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
