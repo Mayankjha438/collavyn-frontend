@@ -18,7 +18,7 @@ body{background:#0A0A12;color:white;overflow-x:hidden}
 .btn-secondary{background:#1A1A2E;border:1px solid #333;padding:14px 28px;border-radius:30px;color:white;margin-left:10px;cursor:pointer}
 .handwritten{font-family:cursive;transform:rotate(-5deg);margin-top:30px;opacity:0.8;font-size:20px}
 .hero-right{flex:1;display:flex;justify-content:center}
-.creator-img{width:400px;height:500px;background:linear-gradient(180deg,#1A1A2E,#0A0A12);border-radius:20px;border:1px solid #333}
+.creator-img{width:400px;height:500px;background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=800&fit=crop');background-size:cover;background-position:center;border-radius:20px;border:1px solid #333;box-shadow:0 20px 60px rgba(168,85,247,0.3)}
 .campaign{text-align:center;padding:80px 60px}
 .campaign h1{font-size:48px;margin-bottom:50px}
 .campaign-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:900px;margin:0 auto}
@@ -31,7 +31,8 @@ body{background:#0A0A12;color:white;overflow-x:hidden}
 .text h2{font-size:48px;margin:20px 0}
 .text ul{list-style:none;margin:20px 0}
 .text li{margin:10px 0;opacity:0.8}
-.image-box{width:400px;height:500px;background:#1A1A2E;border-radius:20px}
+.image-box{width:400px;height:500px;background-image:url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=800&fit=crop');background-size:cover;background-position:center;border-radius:20px}
+.image-box.creator{background-image:url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600&h=800&fit=crop')}
 .cards-stack{display:flex;flex-direction:column;gap:20px}
 .mini-card{background:#1E1E2E;padding:20px 30px;border-radius:15px;border:1px solid #333;transform:rotate(-2deg)}
 footer{display:flex;justify-content:space-between;align-items:center;padding:40px 60px;border-top:1px solid #222}
@@ -39,3 +40,4 @@ footer{display:flex;justify-content:space-between;align-items:center;padding:40p
 .modal-content{background:#14141F;padding:40px;border-radius:20px;width:400px;position:relative}
 .modal-content input{width:100%;padding:12px;margin:10px 0;background:#0A0A12;border:1px solid #333;border-radius:10px;color:white}
 .modal-content span{position:absolute;top:15px;right:20px;cursor:pointer;font-size:24px}
+
